@@ -97,7 +97,7 @@ console.log(randomString());
 
 ### randomAlphaNumString
 
-Random alpha numeric string
+Random alpha numeric string with given `len` (length)
 
 ```
 function randomAlphaNumString(len) {
