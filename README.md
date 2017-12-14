@@ -28,7 +28,7 @@ console.log(randomInt());
 
 ### randomFloat
 
-Random floating point number within 0 to 100
+Random floating point number within 0 to 100 with 2 decimal points
 
 ```
 function randomFloat(){
@@ -36,4 +36,30 @@ function randomFloat(){
 }
 
 console.log(randomFloat());
+```
+
+
+### randomIntInRange
+
+Random number within `min` and `max`
+
+```
+function randomIntInRange(min, max){
+	return Math.random() * (max - min) + min;
+}
+
+console.log(randomIntInRange(1, 1000));
+```
+
+
+### randomFloatInRange
+
+Random floating point number within `min` and `max` with 2 decimal points
+
+```
+function randomFloatInRange(min, max){
+	return (Math.random() * (max - min) + min).toFixed(2);
+}
+
+console.log(randomFloatInRange(1, 1000));
 ```
