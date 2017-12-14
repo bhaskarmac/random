@@ -1,7 +1,7 @@
-# random
+# Introduction
 
 
-A possible collection of random generators in Javascript
+A collection of possible random number/string generator snippets using `JavaScript`
 
 Following are the different random string/number generation methods using `JavaScript`
 
