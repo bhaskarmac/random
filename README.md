@@ -19,7 +19,7 @@ Random number within 0 to 100
 
 ```
 function randomInt(){
-	return Math.floor(Math.random()*100);
+  return Math.floor(Math.random()*100);
 }
 
 console.log(randomInt());
@@ -32,7 +32,7 @@ Random floating point number within 0 to 100 with 2 decimal points
 
 ```
 function randomFloat(){
-	return (Math.random()*100).toFixed(2);
+  return (Math.random()*100).toFixed(2);
 }
 
 console.log(randomFloat());
@@ -45,7 +45,7 @@ Random number within `min` and `max`
 
 ```
 function randomIntInRange(min, max){
-	return Math.random() * (max - min) + min;
+  return Math.random() * (max - min) + min;
 }
 
 console.log(randomIntInRange(1, 1000));
@@ -58,7 +58,7 @@ Random floating point number within `min` and `max` with 2 decimal points
 
 ```
 function randomFloatInRange(min, max){
-	return (Math.random() * (max - min) + min).toFixed(2);
+  return (Math.random() * (max - min) + min).toFixed(2);
 }
 
 console.log(randomFloatInRange(1, 1000));
@@ -71,7 +71,7 @@ Random hex value
 
 ```
 function randomHex(){
-	return '#'+Math.floor(Math.random()*16777215).toString(16);
+  return '#'+Math.floor(Math.random()*16777215).toString(16);
 }
 
 console.log(randomHex());
@@ -97,7 +97,7 @@ console.log(randomString());
 
 ### randomAlphaNumString
 
-Random alpha numeric string with given `len` (length)
+Random alpha numeric string
 
 ```
 function randomAlphaNumString(len) {
@@ -111,4 +111,21 @@ function randomAlphaNumString(len) {
 }
 
 console.log(randomAlphaNumString());
+```
+
+### randomArrMember
+
+Random member of given Array
+
+```
+function randomArrMember(arr) {
+if(arr.length){
+  for (var i = 0; i < arr.length; i++)
+    return arr[Math.floor(Math.random() * arr.length)];
+   } else{
+    return;
+   }
+}
+
+console.log(randomArrMember());
 ```
