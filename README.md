@@ -16,9 +16,10 @@ console.log(Math.random());
 //generates like numbers 0.49561054427985707
 ```
 
+
 ### randomInt
 
-Random number from 0 to 100
+Random number within 0 to 100
 
 ```
 function randomInt(){
