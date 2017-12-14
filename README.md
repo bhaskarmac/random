@@ -76,3 +76,21 @@ function randomHex(){
 
 console.log(randomHex());
 ```
+
+### randomString
+
+Random string
+
+```
+function randomString() {
+  var text = "";
+  var charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+  for (var i = 0; i < 6; i++)
+    text += charSet.charAt(Math.floor(Math.random() * charSet.length));
+
+  return text;
+}
+
+console.log(randomString());
+```
