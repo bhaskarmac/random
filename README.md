@@ -63,3 +63,16 @@ function randomFloatInRange(min, max){
 
 console.log(randomFloatInRange(1, 1000));
 ```
+
+
+### randomHex
+
+Random hex value
+
+```
+function randomHex(){
+	return '#'+Math.floor(Math.random()*16777215).toString(16);
+}
+
+console.log(randomHex());
+```
