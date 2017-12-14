@@ -94,3 +94,21 @@ function randomString() {
 
 console.log(randomString());
 ```
+
+### randomAlphaNumString
+
+Random alpha numeric string
+
+```
+function randomAlphaNumString(len) {
+  var text = "";
+  var charSet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+  for (var i = 0; i < len; i++)
+    text += charSet.charAt(Math.floor(Math.random() * charSet.length));
+
+  return text;
+}
+
+console.log(randomAlphaNumString());
+```
