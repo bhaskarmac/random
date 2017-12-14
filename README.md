@@ -1,2 +1,5 @@
 # random
-A collection of random generators in Javascript
+
+
+A possible collection of random generators in Javascript
+
