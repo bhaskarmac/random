@@ -3,7 +3,6 @@
 
 A collection of possible random number/string generator snippets using `JavaScript`
 
-Following are the different random string/number generation methods using `JavaScript`
 
 ### random
 
@@ -29,4 +28,19 @@ function randomInt(){
 console.log(randomInt());
 
 //generates random number within 0 to 100
+```
+
+
+### randomFloat
+
+Random floating point number within 0 to 100
+
+```
+function randomFloat(){
+	return (Math.random()*100).toFixed(2);
+}
+
+console.log(randomFloat());
+
+//generates random floating point number within 0 to 100
 ```
